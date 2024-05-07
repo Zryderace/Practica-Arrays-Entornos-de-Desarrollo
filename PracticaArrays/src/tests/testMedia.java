@@ -29,7 +29,7 @@ class testMedia {
 	
 	@Test
 	void noValido() {
-		float numEsperado = 5;
+		float numEsperado = -1;
 		float numObtenido = Arrayss.mediaNotas(noValido);
 		assertEquals(numEsperado,numObtenido);
 	}

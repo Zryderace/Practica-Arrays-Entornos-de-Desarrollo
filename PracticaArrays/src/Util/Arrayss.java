@@ -6,7 +6,7 @@ public abstract class Arrayss {
 	 * Devuelve la media de un array con numeros de 0 a 10
 	 * 
 	 * @param numeros array de numeros entre 0 y 10
-	 * @return media de los numero (suma todos los numeros dividido entre numeros totales)
+	 * @return media de los numero (suma todos los numeros dividido entre numeros totales), -1 si salta error
 	 */
 	
 	public static float mediaNotas(int[] numeros) {
