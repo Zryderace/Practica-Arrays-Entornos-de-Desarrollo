@@ -22,22 +22,22 @@ class testMaximo {
 	
 	@Test
 	void valido() {
-		float numEsperado = 9;
-		float numObtenido = Arrayss.maximaNota(valido);
+		int numEsperado = 9;
+		int numObtenido = Arrayss.maximaNota(valido);
 		assertEquals(numEsperado,numObtenido);
 	}
 	
 	@Test
 	void noValido() {
-		float numEsperado = -1;
-		float numObtenido = Arrayss.maximaNota(noValido);
+		int numEsperado = -1;
+		int numObtenido = Arrayss.maximaNota(noValido);
 		assertEquals(numEsperado,numObtenido);
 	}
 	
 	@Test
 	void cinco() {
-		float numEsperado = 5;
-		float numObtenido = Arrayss.maximaNota(cinco);
+		int numEsperado = 5;
+		int numObtenido = Arrayss.maximaNota(cinco);
 		assertEquals(numEsperado,numObtenido);
 	}
 
