@@ -72,4 +72,27 @@ public abstract class Arrayss {
 		return mediana;
 	}
 	
+	public static int maximaNota(int[] numeros) {
+		
+		int max=0;
+		
+		try {
+			for (int i : numeros) {
+				if (i<0||i>10) {
+					throw new IllegalArgumentException();
+				}
+				
+				if(i>max) {
+					max = i;
+				}
+			}
+		} catch (IllegalArgumentException e) {
+			System.out.println("Hay numeros que no estan entre 0 y 10");
+			max = -1;
+		}
+		
+		return max;
+		
+	}
+	
 }
