@@ -72,6 +72,13 @@ public abstract class Arrayss {
 		return mediana;
 	}
 	
+	/**
+	 * devuelve el numero mayor del array
+	 * 
+	 * @param numeros array de numeros entre 0 y 10
+	 * @return max, el numero mayor del array, si hay algun numero fuera de rango, devuelve -1
+	 */
+	
 	public static int maximaNota(int[] numeros) {
 		
 		int max=0;
@@ -90,9 +97,35 @@ public abstract class Arrayss {
 			System.out.println("Hay numeros que no estan entre 0 y 10");
 			max = -1;
 		}
-		
 		return max;
+	}
+	
+	/**
+	 * devuelve el numero menot del array
+	 * 
+	 * @param numeros array de numeros entre 0 y 10
+	 * @return min, el numero menor del array, si hay algun numero fuera de rango devuelve -1
+	 */
+	
+	public static int minimaNota(int[] numeros) {
 		
+		int min = 10;
+		
+		try {
+			for (int i : numeros) {
+				if (i<0||i>10) {
+					throw new IllegalArgumentException();
+				}
+				
+				if(i<min) {
+					min = i;
+				}
+			}
+		} catch (IllegalArgumentException e) {
+			System.out.println("Hay numeros que no estan entre 0 y 10");
+			min = -1;
+		}
+		return min;
 	}
 	
 }
