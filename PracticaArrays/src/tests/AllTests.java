@@ -4,7 +4,7 @@ import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
 
 @Suite
-@SelectClasses({ testMedia.class })
+@SelectClasses({ testMaximo.class, testMedia.class, testMediana.class, testMinimo.class })
 public class AllTests {
-	
+
 }
